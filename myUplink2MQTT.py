@@ -139,5 +139,5 @@ for system in systems:
             if result.rc != 0:
                 print('Error publishing to MQTT Broker: ' + str(result.rc))
 
-mqtt_client.loop_stop
+mqtt_client.loop_stop()
 mqtt_client.disconnect()
